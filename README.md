@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Briefings
 
-## Getting Started
+Este projeto é um sistema de gerenciamento de briefings desenvolvido com React e Next.js. Ele permite adicionar, editar, excluir e filtrar briefings, proporcionando uma maneira eficiente de gerenciar informações importantes sobre os clientes.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
+- Adicionar novos briefings.
+- Editar briefings existentes.
+- Excluir briefings.
+- Filtrar briefings por estado (negociação, aprovado, finalizado).
+- Layout responsivo para fácil utilização em dispositivos móveis.
+
+## Como Rodar o Projeto
+
+Siga os passos abaixo para rodar o projeto localmente em seu ambiente de desenvolvimento:
+
+1. **Clone o repositório:** 
+git clone https://github.com/seu-usuario/sistema-briefings.git
+
+2. **Instale as dependências:**
+cd sistema-briefings
+npm install
+
+3. **Execute o projeto:**
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Isso iniciará o servidor de desenvolvimento e abrirá o projeto em seu navegador padrão.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologias Utilizadas
 
-## Learn More
+- React.js: Uma biblioteca JavaScript para construir interfaces de usuário.
+- Next.js: Um framework de React que permite renderização do lado do servidor e geração de páginas estáticas, entre outras funcionalidades.
+- TypeScript: Um superset JavaScript que adiciona tipagem estática à linguagem.
+- Tailwind CSS: Um framework CSS utilitário para criar rapidamente layouts e estilos personalizados.
+- E outras bibliotecas e ferramentas.
 
-To learn more about Next.js, take a look at the following resources:
+## Autor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este projeto foi criado com o propósito de testar e aprimorar meus conhecimentos em React e Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Sinta-se à vontade para entrar em contato comigo em italofps65@gmail.com se tiver alguma dúvida ou sugestão sobre o projeto.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Aproveite! 😊
