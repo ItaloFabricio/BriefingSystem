@@ -1,3 +1,4 @@
+![Captura de tela 2024-03-17 175603](https://github.com/ItaloFabricio/BriefingSystem/assets/68473238/1d71ae57-4425-43a3-b35d-72cf845ac863)
 # Sistema de Briefings
 
 Este projeto é um sistema de gerenciamento de briefings desenvolvido com React e Next.js. Ele permite adicionar, editar, excluir e filtrar briefings, proporcionando uma maneira eficiente de gerenciar informações importantes sobre os clientes.
