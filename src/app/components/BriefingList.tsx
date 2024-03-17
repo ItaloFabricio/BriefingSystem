@@ -20,25 +20,25 @@ export const BriefingList = ({ briefings, onDelete, onEdit }: Props) => {
     }, [briefings]);
 
     const handleEditClick = (id: number) => {
-        // Encontrar o briefing com o ID correspondente
+        
         const briefing = briefingsData.find((briefing) => briefing.id === id);
         if (briefing) {
-            setBriefingToEdit(briefing); // Definir o briefing a ser editado
-            setOpenModalAdd(true); // Abrir o modal de edição
+            setBriefingToEdit(briefing); 
+            setOpenModalAdd(true); 
         }
     };
 
     const handleCancelEdit = () => {
-        setBriefingToEdit(null); // Limpar o briefing a ser editado
-        setOpenModalAdd(false); // Fechar o modal de edição
+        setBriefingToEdit(null); 
+        setOpenModalAdd(false); 
     };
 
     const handleEditBriefing = (updatedBriefing: Briefing) => {
         const updatedBriefings = briefings.map((briefing) =>
             briefing.id === updatedBriefing.id ? updatedBriefing : briefing
         );
-        onEdit(updatedBriefing); // Atualize os briefings na lista original
-        setOpenModalAdd(false); // Fechar o modal de edição
+        onEdit(updatedBriefing); 
+        setOpenModalAdd(false); 
     };
 
     return (
