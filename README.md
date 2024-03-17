@@ -15,14 +15,14 @@ Este projeto é um sistema de gerenciamento de briefings desenvolvido com React 
 Siga os passos abaixo para rodar o projeto localmente em seu ambiente de desenvolvimento:
 
 1. **Clone o repositório:** 
-git clone https://github.com/seu-usuario/sistema-briefings.git
+- git clone https://github.com/seu-usuario/sistema-briefings.git
 
 2. **Instale as dependências:**
-cd sistema-briefings
-npm install
+- cd sistema-briefings
+- npm install
 
 3. **Execute o projeto:**
-npm run dev
+- npm run dev
 
 
 Isso iniciará o servidor de desenvolvimento e abrirá o projeto em seu navegador padrão.
@@ -31,9 +31,8 @@ Isso iniciará o servidor de desenvolvimento e abrirá o projeto em seu navegado
 
 - React.js: Uma biblioteca JavaScript para construir interfaces de usuário.
 - Next.js: Um framework de React que permite renderização do lado do servidor e geração de páginas estáticas, entre outras funcionalidades.
-- TypeScript: Um superset JavaScript que adiciona tipagem estática à linguagem.
+- TypeScript: Adiciona tipagem estática à linguagem.
 - Tailwind CSS: Um framework CSS utilitário para criar rapidamente layouts e estilos personalizados.
-- E outras bibliotecas e ferramentas.
 
 ## Autor
 
