@@ -15,14 +15,14 @@ export const AddBriefingForm = ({ onAdd, onCancel }: Props) => {
     event.preventDefault();
     const dateTime = new Date().toLocaleString();
     const newBriefing: Briefing = {
-      id: Date.now(), // Gere um ID único para o novo briefing
+      id: Date.now(), 
       clientName,
       description,
       dateTime,
       state,
     };
-    onAdd(newBriefing); // Chame a função onAdd para adicionar o novo briefing
-    setClientName(''); // Limpe os campos do formulário após a submissão
+    onAdd(newBriefing); 
+    setClientName(''); 
     setDescription('');
     setState('negociacao');
     onCancel();
@@ -32,7 +32,7 @@ export const AddBriefingForm = ({ onAdd, onCancel }: Props) => {
     setClientName('');
     setDescription('');
     setState('negociacao');
-    onCancel(); // Chamando a função onCancel para fechar o modal
+    onCancel(); 
   }
 
   return (

@@ -2,33 +2,33 @@ import { useState } from 'react';
 import { Briefing } from '../types/Briefing';
 
 type Props = {
-  briefing: Briefing; // Adicione a propriedade briefing ao tipo Props
+  briefing: Briefing; 
   onEdit: (updatedBriefing: Briefing) => void;
   onCancel: () => void;
 };
 
 export const EditBriefingForm = ({ briefing, onEdit, onCancel }: Props) => {
-  const [clientName, setClientName] = useState(briefing.clientName); // Inicialize com o valor do briefing
-  const [description, setDescription] = useState(briefing.description); // Inicialize com o valor do briefing
-  const [state, setState] = useState(briefing.state); // Inicialize com o valor do briefing
+  const [clientName, setClientName] = useState(briefing.clientName); 
+  const [description, setDescription] = useState(briefing.description); 
+  const [state, setState] = useState(briefing.state); 
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     const dateTime = new Date().toLocaleString();
     const updatedBriefing: Briefing = {
-      ...briefing, // Mantenha os dados existentes do briefing
+      ...briefing, 
       clientName,
       description,
       dateTime,
       state,
     };
     console.log('Briefing atualizado:', updatedBriefing);
-    onEdit(updatedBriefing); // Chame a função onEdit para atualizar o briefing existente
+    onEdit(updatedBriefing);
     onCancel();
   };
 
   const handleCancel = () => {
-    onCancel(); // Chame a função onCancel para fechar o modal
+    onCancel();
   }
 
   return (

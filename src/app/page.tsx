@@ -1,7 +1,7 @@
 "use client"
 import { Fragment, SetStateAction, useEffect, useState } from 'react';
 import { BriefingList } from './components/BriefingList';
-import { AddBriefingForm } from './components/AddBriefingForm'; // Importe o componente AddBriefingForm
+import { AddBriefingForm } from './components/AddBriefingForm'; 
 import { briefings } from './data/briefings';
 import { Modal } from './components/Modal';
 import { Briefing } from './types/Briefing';
@@ -10,7 +10,7 @@ const Page = () => {
   const [openModalAdd, setOpenModalAdd] = useState(false);
   const [filter, setFilter] = useState('');
   
-  const [briefingsData, setBriefingsData] = useState(briefings); // Use um estado para armazenar os briefings
+  const [briefingsData, setBriefingsData] = useState(briefings);
 
   useEffect(() => {
     setBriefingsData(briefings);
@@ -21,7 +21,7 @@ const Page = () => {
   };
 
   const handleAddBriefing = (newBriefing: Briefing) => {
-    setBriefingsData([...briefingsData, newBriefing]); // Adicione o novo briefing ao estado briefingsData
+    setBriefingsData([...briefingsData, newBriefing]); 
   };
 
   const handleEditBriefing = (updatedBriefing: Briefing) => {
